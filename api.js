@@ -34,7 +34,7 @@ app.get('/todos/:id', (req,res) => {
     const id = parseInt(req.params.id);
     //Busca la tarea en el arreglo de acuerdo con el id
     const todo = todos.find(e => e.id === id);
-
+    //*
     //Si la tarea es encontrada se muestra la información
     if(todo){
         res.json(todo);
